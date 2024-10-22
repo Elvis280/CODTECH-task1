@@ -1,0 +1,118 @@
+/* Global */
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #080808;
+    margin: 0;
+}
+
+/* Navigation */
+header {
+    height: 70px;
+    display: flex;
+}
+
+.nav-right {
+    border-radius: 4px;
+    background-color: rgb(38, 38, 38);
+    height: 60px;
+    width: 100%;
+    margin: 0 85px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: #9C9C9C;
+    transition: color 0.3s;
+}
+
+.nav-right a:hover {
+    color: #3F8E00;
+}
+
+/* Logo */
+.logo {
+    height: 60px;
+    width: 70px;
+    background-image: url(elvis1.bmp); /* Ensure correct path */
+    background-size: cover;
+}
+
+/* Intro and Profile Section */
+.intro {
+    height: 350px;
+    width: 750px;
+    position: absolute;
+    top: 200px;
+    left: 210px;
+}
+
+.intro button {
+    border-color: #3F8E00;
+    margin-top: 30px;
+    border-radius: 4px;
+    background-color: #3F8E00;
+    box-shadow: 0px 0px 20px 0px #3F8E00;
+    color: aliceblue;
+    font-weight: 700;
+    height: 65px;
+    width: 290px;
+}
+
+.profile-pic {
+    height: 350px;
+    width: 350px;
+    background-color: #9C9C9C;
+    background-image: url(profile.png); /* Update this path */
+    border-radius: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 150px;
+    left: 1000px;
+}
+
+/* Section Styles (Projects, Certifications, About, Contact) */
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.proj1, .cert, .about, .contact-form {
+    margin: 50px auto;
+    width: 750px;
+    padding: 20px;
+    background-color: rgb(38, 38, 38);
+    border-radius: 4px;
+}
+
+.project-card, .cert ul li, .about p, .contact-form {
+    background-color: #222;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    color: #9C9C9C;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #3F8E00;
+}
+
+.contact-form button {
+    background-color: #FFA217;
+    color: aliceblue;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px #FFA217;
+}
